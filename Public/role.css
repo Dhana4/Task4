@@ -1,0 +1,336 @@
+#reset{
+    width:45%;
+    border:1px solid pink;
+    background-color:white;
+    border-radius:5px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    color:rgb(235, 151, 165);
+    font-size:1.2rem;
+}
+#apply-btn{
+    width:45%;
+    margin-left:10%;
+    border:1px solid pink;
+    background-color:#F44848;
+    border-radius:5px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    color:white;font-size:1.2rem;
+}
+.bttn{
+    padding:5% 0 5% 0;
+    cursor:pointer;
+}
+.employee-sec{
+    width:90%;
+    padding:5%;
+    background-color:#FEE9E9;
+    border-radius:5px;
+    margin:5% 0 0 2%;
+    display:flex;
+    align-items:center;
+}
+.employee-sec > :first-child{
+    width:20%;
+}
+.employee-sec > :nth-child(2){
+    width:74%;
+}
+.employee-sec > :last-child{
+
+    width:6%;
+}
+.employee-text{
+    font-size:1.3rem;
+    color:red;
+}
+  #role-config{
+    width:100%;
+    display:flex;
+    margin:3% 0 3% 0;
+  }
+  #role-config > :nth-child(1){
+    width:88%;
+  }
+  #role-config > :nth-child(2){
+    width:12%;
+  }
+  #role-head{
+    width:100%;
+    font-size:1.3rem;
+  }
+#role-mat{
+    width:100%;
+    padding-top:1%;
+    font-size:1.1rem;
+    color:grey;
+}
+#add-role-bt{
+    width:100%;
+    border-radius:5px;
+    background-color:#F44848;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:9% 0 9% 0;
+    cursor:pointer;
+}
+#add-role-mat{
+    justify-content:left;
+    font-size:1.1rem;
+}
+#add-role-mat a{
+  text-decoration:none;
+  color:white;
+}
+  .allRoles{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:2%;
+    padding-block:1%;
+  }
+  .roleBox{
+    max-width:100%;
+    width:32%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    padding:2% 1.5% 2% 1.5%;
+    margin-bottom:2%;
+  }
+  .roleNameEditImg{
+    width:100%;
+    display:flex;
+    margin-bottom:7%;
+  }
+  .roleDepartment{
+    width:100%;
+    display:flex;
+    margin-bottom:1%;
+  }
+  .roleLocation{
+    display:flex;
+    width:100%;
+    margin-bottom:1%;
+  }
+  .total-emp{
+    display:flex;
+    width:100%;
+    margin-bottom:2%;
+  }
+  .total-emp-mat{
+    width:77%;
+    font-size:1.1rem;
+    color:#5C6A85;
+  }
+  .total-emp-img{
+    width:23%;
+    display:flex;
+    justify-content:flex-end;
+  }
+  .image-container {
+    display: flex;
+    align-items: center;
+}
+.image-container img{
+  width:25%;
+  height:auto;
+  border-radius:50%;
+  margin-right: -12%;
+}
+.image-container img:last-child {
+  margin-right: 0; 
+}
+.plus-text{
+  font-size:.8rem;
+  margin-left:12%;
+}
+  .view-all-emp{
+    width:98%;
+    gap:2%;
+    display:flex;
+    justify-content:flex-end;
+    cursor:pointer;
+  }
+  .view-all-emp img{
+    margin-top:1%;
+  }
+  .view-all-emp-mat{
+    font-size:1rem;
+    color:#797979;
+  }
+.roleNameHead{
+    width:94%;
+    font-size:1.3rem;
+    font-weight:600;
+}
+.edit-img{
+    width:6%;
+    display:flex;
+    justify-content:flex-end;
+    cursor:pointer;
+}
+.department-text{
+    width:50%;
+    font-size:1.1rem;
+    color:#5C6A85;
+}
+.departmentNameText{
+    width:40%;
+    font-size:1.1rem;
+    color:#5C6A85;
+    display:flex;
+    justify-content:right;
+}
+.location-text{
+    width:50%;
+    font-size:1.1rem;
+    color:#5C6A85;
+}
+.locationNameText{
+    width:40%;
+    font-size:1.1rem;
+    color:#5C6A85;
+    display:flex;
+    justify-content:right;
+}
+#empp1{
+    z-index:5;
+}
+#empp2{
+    z-index:4;
+}
+button:focus{
+  outline:none !important;
+}
+@media screen and (max-width:320px){
+    .allRoles{
+        flex-direction:column;
+    }
+    .roleBox{
+        width:100%;
+        margin-bottom:4%;
+        padding:5%;
+    }
+    #resett{
+        width:37%;
+    }
+    #applyy{
+        width:37%;
+    }
+    .bttn{
+        padding:1.5%;
+    }
+    #role-config{
+        flex-direction:column;
+    }
+    #role-config > :nth-child(1){
+        width:100%;
+      }
+      #role-config > :nth-child(2){
+        width:40%;
+        margin:.5rem 0 .5rem 0;
+      }
+}
+@media screen and (max-width:375px)and (min-width:321px){
+    .allRoles{
+        flex-direction:column;
+    }
+    .roleBox{
+        width:100%;
+        margin-bottom:4%;
+        padding:5%;
+    }
+    #resett{
+        width:37%;
+    }
+    #applyy{
+        width:37%;
+    }
+    .bttn{
+        padding:1.5%;
+    }
+    #role-config{
+        flex-direction:column;
+    }
+    #role-config > :nth-child(1){
+        width:100%;
+      }
+      #role-config > :nth-child(2){
+        width:35%;
+        margin:.8rem 0 .8rem 0;
+      }
+}
+@media screen and (max-width:430px)and (min-width:376px){
+    .allRoles{
+        flex-direction:column;
+    }
+    .roleBox{
+        width:100%;
+        margin-bottom:4%;
+        padding:5%;
+    }
+    #resett{
+        width:37%;
+    }
+    #applyy{
+        width:37%;
+    }
+    .bttn{
+        padding:1.5%;
+    }
+    #role-config{
+        flex-direction:column;
+    }
+    #role-config > :nth-child(1){
+        width:100%;
+      }
+      #role-config > :nth-child(2){
+        width:30%;
+        margin:.8rem 0 .8rem 0;
+      }
+
+}
+@media screen and (max-width:770px) and (min-width:530px){
+    .roleBox{
+        width:49%;
+    }
+    #resett{
+        width:37%;
+    }
+    #applyy{
+        width:37%;
+    }
+    .bttn{
+        padding:1.5%;
+    }
+    #role-config{
+        flex-direction:column;
+    }
+    #role-config > :nth-child(1){
+        width:100%;
+      }
+      #role-config > :nth-child(2){
+        width:20%;
+        margin:.8rem 0 .8rem 0;
+      }
+      .view-all-emp img{
+        margin-top:0%;
+      }
+}
+@media screen and (max-width:1024px)and (min-width:819px){
+    #role-config > :nth-child(1){
+        width:80%;
+      }
+      #role-config > :nth-child(2){
+        width:20%;
+      }
+      .roleBox{
+        width:49%;
+      }
+   
+}

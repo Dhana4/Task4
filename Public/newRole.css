@@ -1,0 +1,232 @@
+.flex{
+    display:flex;
+}
+.employee-sec{
+    width:90%;
+    padding:5%;
+    background-color:#FEE9E9;
+    border-radius:5px;
+    margin:5% 0 0 2%;
+    display:flex;
+    align-items:center;
+}
+.employee-sec > :first-child{
+    width:20%;
+}
+.employee-sec > :nth-child(2){
+    width:74%;
+}
+.employee-sec > :last-child{
+
+    width:6%;
+}
+.employee-text{
+    font-size:1.3rem;
+}
+.employee-text a{
+    text-decoration:none;
+    color:red;
+}
+#add-new-role{
+    margin:0 1.2rem 0 2rem ;
+}
+.create-new-role-head{
+    font-size:1.5rem;
+    margin:2% 0 2% 0;
+    font-weight:400;
+}
+.row {
+    margin:0 0 .5rem .2rem; 
+    display:flex;
+    gap:3%;/* Add margin between rows */
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 2%; /* Add margin between label and input */
+}
+.input-box{
+    height:3rem;
+    width:20rem;
+    font-size:1.1rem;
+    line-height: 1.1rem;
+}
+.input-box-empinfo{
+    height:3rem;
+    width:20rem;
+    font-size:1.1rem;
+    line-height: 1.1rem;
+}
+.input-box::placeholder{
+    font-size:1.1rem;
+}
+.input-label{
+    font-size:1.2rem;
+}
+#location-select{
+    margin:1rem 0 1rem 0;
+}
+textarea{
+    margin:1rem 0 0 0;
+    width:30rem;
+    height:8rem;
+}
+#searchInput{
+    background-image: url('/Employee-images/down-arrow.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1.5rem 1.5rem;
+}
+.emp-submit{
+    justify-content:flex-end;
+    gap:2%;
+    z-index:1;
+}
+.emp-submit > :first-child{
+    background-color: #FBEBEB;
+    color:#F78F8F
+}
+.emp-submit > :lat-child{
+    background-color:#F44848;
+}
+.emp-submit button{
+    background-color:red;
+    color:white;
+    padding:1% 0 1% 0;
+    width:10%;
+    border-radius:5px;
+    border:none;
+    font-size:1rem;
+    margin-bottom:2%;
+    cursor:pointer;
+}
+#searchResults{
+    height:3rem;
+    width:18.5rem;
+}
+.success-message {
+    display:none;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4c87af; 
+    color: white; 
+    padding: 2%; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index:2; 
+    font-size:1.5rem;
+}
+.error-message{
+    color:red;
+}
+textarea:focus{
+    outline:none;
+}
+select:focus{
+    outline:none;
+}
+input:focus {
+    border-color: #4C9AFF;
+    outline:none;
+  }
+  button:focus{
+    outline:none !important;
+  }
+@media screen and (max-width:320px){
+    #add-new-role{
+        margin:0 0.2rem 0 0.2rem ;
+    }
+    .input-box-empinfo{
+        height:2rem;
+        width:15rem;
+    }
+    .input-box{
+        height:2rem;
+        width:15rem;
+    }
+    textarea{
+        width:15.3rem;
+        height:8rem;
+    }
+    .emp-submit button{
+        width:35%;
+    }
+    .emp-submit{
+        margin:1rem 0 1.5rem 0;
+        justify-content:flex-start;
+    }
+    #searchInput{
+        background-size: 1rem 1rem;
+    }
+
+}
+@media screen and (max-width:375px)and (min-width:321px){
+    #add-new-role{
+        margin:0 0.2rem 0 0.2rem ;
+    }
+    .input-box-empinfo{
+        height:2rem;
+        width:18rem;
+    }
+    .input-box{
+        height:2rem;
+        width:18rem;
+    }
+    textarea{
+        width:18.3rem;
+        height:8rem;
+    }
+    .emp-submit button{
+        width:30%;
+    }
+    .emp-submit{
+        margin:1rem 0 1.5rem 0;
+        justify-content:flex-start;
+    }
+    #searchInput{
+        background-size: 1rem 1rem;
+    }
+}
+@media screen and (max-width:430px)and (min-width:376px){
+    #add-new-role{
+        margin:0 0.2rem 0 0.2rem ;
+    }
+    .input-box-empinfo{
+        height:2rem;
+        width:21rem;
+    }
+    .input-box{
+        height:2rem;
+        width:21rem;
+    }
+    textarea{
+        width:21.3rem;
+        height:8rem;
+    }
+    .emp-submit button{
+        width:25%;
+    }
+    .emp-submit{
+        margin:1rem 0 1.5rem 0;
+        justify-content:flex-start;
+    }
+    #searchInput{
+        background-size: 1rem 1rem;
+    }
+}
+@media screen and (max-width:770px) and (min-width:530px){
+    #add-new-role{
+        margin:0 0.2rem 0 0.2rem ;
+    }
+    .emp-submit button{
+        width:15%;
+    }
+}
+@media screen and (max-width:1024px)and (min-width:819px){
+    .emp-submit button{
+        width:15%;
+    }
+}

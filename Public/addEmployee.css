@@ -1,0 +1,227 @@
+.employee-sec{
+    padding:5%;
+    background-color:#FDE9E9;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    margin:5% 0 0 3%;
+}
+.employee-sec > :nth-child(1){
+    width:15%;
+}
+.employee-sec > :nth-child(2){
+    width:85%;
+}
+.employee-text{
+    font-size:1.3rem;
+}
+.employee-text a{
+    text-decoration:none;
+    color:red;
+}
+.add-emp-head{
+    font-size:1.5rem;
+    margin:2% 0 2% 0;
+}
+.row {
+    margin-bottom: 10px; 
+    display:flex;
+    gap:3%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 2%; 
+}
+form{
+    margin:0 1rem 0 1rem;
+}
+.column label {
+    margin-bottom: 2%; 
+}
+.flex{
+    display:flex;
+}
+.profile-edit{
+    gap:2%;
+    margin-bottom:1%;
+}
+.profile-edit-img{
+    width:5%;
+    height:1%;
+    background-color:#CED2D9;
+    border-radius:50%;
+}
+.input-box{
+    height:3rem;
+    width:18rem;
+    font-size:1.1rem;
+    line-height: 1.1rem;
+}
+.input-box-empinfo{
+    height:3rem;
+    width:30rem;
+    font-size:1.1rem;
+    line-height: 1.1rem;
+}
+.input-box::placeholder{
+    font-size:1.1rem;
+}
+.input-label{
+    font-size:1.2rem;
+}
+.upload-profile-picture-btn{
+    margin:1% 0 1% 0;
+    border:none;
+    background-color:red;
+    color:white;
+    font-size:1rem;
+    border-radius:5px;
+    cursor:pointer;
+}
+.emp-submit{
+    justify-content:flex-end;
+    gap:2%;
+}
+.emp-submit > :first-child{
+    background-color: #FBEBEB;
+    color:#F78F8F
+}
+.emp-submit > :last-child{
+    background-color:#F44848;
+}
+.emp-submit button{
+    background-color:red;
+    color:white;
+    padding:1% 0 1% 0;
+    width:10%;
+    border-radius:5px;
+    border:none;
+    font-size:1rem;
+    margin-bottom:2%;
+    cursor:pointer;
+}
+.success-message {
+    display:none;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4c87af; 
+    color: white; 
+    padding: 2%; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index:2; 
+    font-size:1.5rem;
+}
+.error-message{
+    color:red;
+}
+select:focus{
+    outline:none;
+}
+input:focus {
+    border-color: #4C9AFF;
+    outline:none;
+  }
+  button:focus{
+    outline:none !important;
+  }
+.hidden{
+    display:none;
+}
+#assignManagerOptions li{
+    cursor:pointer;
+}
+#assignProjectOptions li{
+    cursor:pointer;
+}
+@media screen and (max-width:320px){
+    .profile-edit{
+        gap:5%;
+    }
+    .profile-edit-img{
+        width:10%;
+        height:10%;
+    }
+    .input-box-empinfo{
+        height:2rem;
+        width:15rem;
+    }
+    .input-box{
+        height:2rem;
+        width:12rem;
+    }
+    .emp-submit button{
+        width:50%;
+    }
+    .emp-submit{
+        justify-content:flex-start;
+    }
+    form{
+        margin:0 1rem 0 1rem;
+    }
+}
+@media screen and (max-width:375px)and (min-width:321px){
+    .profile-edit{
+        gap:5%;
+    }
+    .profile-edit-img{
+        width:10%;
+        height:10%;
+    }
+    .input-box-empinfo{
+        height:2rem;
+        width:17rem;
+    }
+    .input-box{
+        height:2rem;
+        width:14rem;
+    }
+    .emp-submit button{
+        width:45%;
+    }
+    .emp-submit{
+        justify-content:flex-start;
+    }
+}
+@media screen and (max-width:430px)and (min-width:376px){
+    .profile-edit{
+        gap:5%;
+    }
+    .profile-edit-img{
+        width:10%;
+        height:10%;
+    }
+    .input-box-empinfo{
+        height:2rem;
+        width:19rem;
+    }
+    .input-box{
+        height:2rem;
+        width:16rem;
+    }
+    .emp-submit button{
+        width:45%;
+    }
+    .emp-submit{
+        justify-content:flex-start;
+    }
+}
+@media screen and (max-width:770px) and (min-width:530px){
+    .emp-submit button{
+        width:25%;
+    }
+}
+@media screen and (max-width:1024px)and (min-width:819px){
+    .emp-submit button{
+        width:25%;
+    }
+}
+@media screen and (max-width:1440px)and (min-width:1025px){
+    .emp-submit button{
+        width:15%;
+    }
+}

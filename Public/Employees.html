@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task4</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  <link rel="stylesheet" href="Employees.css">
+  <link rel="stylesheet" href="common-css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <script type="module" src="index-employee-common.js" ></script>
+    <script type ="module" src="Employees.js"></script>
+  <!-- <script src="/dist/main.js"></script> -->
+</head>
+<body>
+  <section id="employee-page">
+    <div id="left-content">
+      <section id="logo-sec">
+        <div><img alt="tezo logo" id="tezo-logo" src="/Employee-images/TezoLogo.png"></div>
+        <div><img alt="handle icon" id="tezo-side" src="/Employee-images/handle.png" ></div>
+      </section>
+      <div id="left-long-part">
+        <div id="al">ALL</div>
+        <section class="left-common">
+          <div><img alt="dashboard image" src="/Employee-images/Dashboard.svg" width="50%" height="50%"></div>
+          <div><span class="dash-board-text">Dashboard</span></div>
+        </section>
+        <section class="employee-sec" id="employee">
+          <div><img alt="dashboard employees image" src="/Employee-images/Horizontal nav/Employees.svg" width="45%" height="45%"></div>
+          <div><span class="employee-text">Employees</span></div>
+        </section>
+        <div id="role-user-management">ROLE / USER MANAGEMENT</div>
+        <section class="left-common role-access" id="role">
+          <div><img alt="roles icon" src="/Employee-images/Horizontal nav/Roles.svg" width="60%" height="60%">
+          </div>
+          <div><span class="dash-board-text"><a href="role.html">Roles</a></span></div>
+          <div><img alt="dropdown" src="/Employee-images/right-arrow.png" width="25%" height="25%"></div>
+        </section>
+        <section class="left-common role-access">
+          <div><img alt="assign user" src="/Employee-images/Horizontal nav/assign user.svg" width="60%" height="60%"></div>
+          <div><span class="dash-board-text">Access Rights</span></div>
+          <div><img alt="dropdown" src="/Employee-images/right-arrow.png" width="25%" height="25%"></div>
+        </section>
+        <div id="last-box">
+          <div class="install-new-update">Install new Update 2.3.1A</div>
+          <div class="allow-to-launch">Allow to launch the new update for the AD Application</div>
+          <div>
+            <button type="submit" id="dismiss-but">Dismiss</button>
+            <button type="submit" id="apply-but">Accept</button>
+          </div>
+        </div>
+
+      </div>
+      <div  id="left-hidden-part">
+        <div><img alt="tezo icon" src="/Employee-images/Dashboard.svg" width="50%" height="50%"></div>
+        <div><img alt="employees" src="/Employee-images/Horizontal nav/Employees.svg" width="50%" height="50%"></div>
+        <div><a href="role.html"><img alt="roles" src="/Employee-images/Horizontal nav/Roles.svg" width="50%" height="50%"></a></div>
+        <div><img alt="assign user" src="/Employee-images/Horizontal nav/assign user.svg" width="50%" height="50%"></div>
+      </div>
+    </div>
+    <div id="right-content">
+      <section id="parent-search">
+        <div><img alt="search here" src="/Employee-images/bx-search.png" width="75%" height="75%"></div>
+        <div> <input id="search" type="search" placeholder="Search"></div>
+        <div id="suggestions"></div>
+        <section id="search-images">
+          <img alt="categories" class="search-imgs" src="/Employee-images/Vertical Navbar/Categories.svg" height="95%" width="95%">
+          <img alt="language" class="search-imgs" src="/Employee-images/Vertical Navbar/Language.svg" height="95%" width="95%">
+          <img alt="mode" class="search-imgs" src="/Employee-images/Vertical Navbar/Mode.svg" height="95%" width="95%">
+          <img alt="notifications" class="search-imgs" src="/Employee-images/Vertical Navbar/Notifications.svg" height="95%" width="95%">
+        </section>
+        <section id="search-profile">
+          <div><img alt="admin" src="/Employee-images/admin.jpg" width="80%" heigth="80%"></div>
+          <section id="search-admin">
+            <div id="user-name">John Abraham<br>
+              <span style="font-weight:900">Admin</span>
+            </div>
+            <div><img alt="dropdown" src="/Employee-images/down-arrow.jpg" width="70%" heigth="70%"></div>
+
+          </section>
+          <img alt="handle icon" src="/Employee-images/handle.png" alt="" class="collapse-btn collapse-up-button " id="collapse-up-button">
+
+          <div class="topbar-dropdown" id="topbar">
+
+            <div class="dropdown-btn"> <a href="#">Dashboard</a></div>
+            <div class="dropdown-btn"><a href="#"> Employees</a></div>
+            <div class="dropdown-btn"><a href="role.html"> Roles</a></div>
+            <div class="dropdown-btn"><a href="#">Acess Rights</a></div>
+            <div class="dropdown-btn"><a href="#"> Profile</a></div>
+            <div class="dropdown-btn"><a href="#"> Categories</a></div>
+            <div class="dropdown-btn"><a href="#"> Language</a></div>
+            <div class="dropdown-btn"><a href="#"> Mode</a></div>
+            <div class="dropdown-btn"><a href="#"> Notifications</a></div>
+          </div>
+        </section>
+      </section>
+
+      <section id="add-employee">
+        <div>
+          <div id="emp-head">Employees</div>
+          <div id="emp-desc">Find all of your company's employee accounts and their associated roles</div>
+      
+        </div>
+        <div id="export-addemp-btn">
+        <button id="export-but">
+          <div id="export-icon"><img alt="export employees" src="/Employee-images/Interface/Export.svg" width="80%" height="0%"></div>
+          <div id="export-text"><span>EXPORT</span></div>
+        </button>
+          <button id="add-emp-bt">
+            <img alt="add" src="/Employee-images/Interface/Add.svg" width="25%" height="55%">
+            <span id="add-emp-mat"><a href="addEmployee.html">ADD EMPLOYEE</a></span>
+      
+          </button>
+        </div>
+      
+      </section>
+      <section id="alphabets">
+        <div id="alphabets-img">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+        <div id="alphabets-bt">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+          <div>D</div>
+          <div>E</div>
+          <div>F</div>
+          <div>G</div>
+          <div>H</div>
+          <div>I</div>
+          <div>J</div>
+          <div>K</div>
+          <div>L</div>
+          <div>M</div>
+          <div>N</div>
+          <div>O</div>
+          <div>P</div>
+          <div>Q</div>
+          <div>R</div>
+          <div>S</div>
+          <div>T</div>
+          <div>U</div>
+          <div>V</div>
+          <div>W</div>
+          <div>X</div>
+          <div>Y</div>
+          <div>Z</div>
+        </div>
+      </section>
+      <section id="filter">
+        <div>
+          <span id="filter-text">Filter</span>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 24 24">
+            <path fill="#f44848" d="M10 18v-2h4v2zm-4-5v-2h12v2zM3 8V6h18v2z" />
+          </svg>
+        </div>
+        <div>
+      
+          <select class="multi-select selectpicker" id="status" multiple data-live-search="true">
+            <option><span class="select-options" value="Active">Active</span></option>
+            <option><span class="select-options" value="InActive">In Active</span></option>
+          </select>
+      
+        </div>
+        <div>
+          <select class="multi-select selectpicker" id="location" multiple data-live-search="true">
+            <option><span class="select-options" value="New York">New York</span></option>
+            <option><span class="select-options" value="Los Angeles">Los Angeles</span></option>
+            <option><span class="select-options" value="Chicago">Chicago</span></option>
+            <option><span class="select-options" value="Mumbai">Mumbai</span></option>
+            <option><span class="select-options" value="Delhi">Delhi</span></option>
+            <option><span class="select-options" value="Bangalore">Bangalore</span></option>
+            <option><span class="select-options" value="Hyderabad">Hyderabad</span></option>
+          </select>
+      
+        </div>
+        <div>
+          <select class="multi-select selectpicker" id="department" multiple data-live-search="true">
+            <option><span class="select-options" value="Engineering">Engineering</span></option>
+            <option><span class="select-options" value="Marketing">Marketing</span></option>
+            <option><span class="select-options" value="Finance">Finance</span></option>
+            <option><span class="select-options" value="Human Resources">Human Resources</span></option>
+            <option><span class="select-options" value="Product Management">Product Management</span></option>
+            <option><span class="select-options" value="Customer Success">Customer Success</span></option>
+            <option><span class="select-options" value="Quality Assurance">Quality Assurance</span></option>
+      
+          </select>
+        </div>
+        <div>
+          <button type="reset" id="reset" class="bttn">Reset</button>
+          <button type="submit" id="apply-btn" class="bttn">Apply</button>
+        </div>
+      
+      </section>
+      <div class="table-container">
+        <section id="delete">
+          <div><img alt="turn left" src="/Employee-images/Interface/arrow-turn left -down.svg" width="70%" height="70%"
+              style="max-width:100%"></div>
+          <div><button type="submit" id="delete-bt">Delete</button></div>
+          <div><img alt="add table" src="/Employee-images/Interface/table-add.svg" width="80%" height="80%" style="max-width:100%">
+          </div>
+        </section>
+        <table>
+          <thead>
+            <tr>
+              <th ><input type="checkbox" id="select-all"></th>
+              <th ><span class="user-data-in-rows">USER</span><img id="sort-username-btn" class="sort-img" src="/Employee-images/up-down-arrow.png"
+                  width="5%" height="5%" style="max-width:100%"></th>
+              <th ><span class="user-data-in-rows">LOCATION</span><img id="sort-location-btn" class="sort-img" src="/Employee-images/up-down-arrow.png"
+                  width="9.5%" height="9.5%" style="max-width:100%"></th>
+              <th ><span class="user-data-in-rows">DEPARTMENT</span><img id="sort-department-btn" class="sort-img" src="/Employee-images/up-down-arrow.png"
+                  width="7.5%" height="7.5%" style="max-width:100%"></th>
+              <th ><span class="user-data-in-rows">ROLE</span><img id="sort-role-btn" class="sort-img" src="/Employee-images/up-down-arrow.png"
+                  width="7%" height="7%" style="max-width:100%"></th>
+              <th ><span class="user-data-in-rows">EMP NO</span><img id="sort-empNo-btn" class="sort-img" src="/Employee-images/up-down-arrow.png"
+                  width="10.5%" height="10.5%" style="max-width:100%"></th>
+              <th ><span class="user-data-in-rows">STATUS</span><img src="/Employee-images/up-down-arrow.png"
+                  width="11%" height="11%" style="max-width:100%"></th>
+              <th ><span class="user-data-in-rows">JOIN DT</span><img id="sort-joiningdate-btn" class="sort-img" src="/Employee-images/up-down-arrow.png"
+                  width="9%" height="9%" style="max-width:100%"></th>
+              <th ><img alt="dots" src="/Employee-images/dots.png" width="30%" height="30%" style="max-width:100%">
+              </th>
+            </tr>
+          </thead>
+          <tbody id="employee_table">
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </section>
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('select').selectpicker();
+  });
+</script>
+</body>
+</html>
